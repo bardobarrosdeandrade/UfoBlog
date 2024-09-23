@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+body {
+    background-color:rgb(0, 0, 0) ;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.header {
+    background: url("disco-voador-570x325.jpg");
+    padding: 46px;
+}
+
+.logo {
+    font-size: 12px;
+    padding: 10px;
+}
+
+.menu a, menu a:visited {
+    color: rgb(2, 1, 1);
+    text-decoration: none;
+    padding: 8px 40px;
+    
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(24, 22, 22);
+}
+
+.post p {
+    margin: 10px 0px;
+}
+
+.menu a:hover {
+    background-color: rgba(143, 82, 82, 0.757);
+    color: rgb(0, 0, 0);
+}
+
+.container {
+    width: 920px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.posts1{
+    width: 440px;
+    background-color: rgb(221, 221, 221);
+    float: left;
+    margin: 10px;
+    
+}
+
+.posts2 {
+    width: 440px;
+    background-color: rgb(221, 221, 221);
+    float: right;
+    margin: 10px;
+}
+
+.posts3 {
+    width: 440px;
+    background-color: rgb(221, 221, 221);
+    float: left;
+    margin: 10px;
+    
+}
+
+.posts4 {
+    width: 440px;
+    background-color: rgb(221, 221, 221);
+    float: right;
+    margin: 10px;
+    
+}
+.post {
+    padding: 18px;
+}
+
+.footer {
+    clear: both;
+    background-color: rgb(221, 221, 221);
+    padding: 15px;
+
+}
+
+.footer {
+    color:rgb(0, 0, 0) ;
+    text-align: center;
+    
+}
+
+.btn, .input-email, .input-nome {
+    float: inline-end;
+
+}
+
+span, h3 {
+    float: inline-end;
+    font-size: medium;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+/* 920px total-
+660px + 240px = 900 a soma das 2 divs 
+tem que ser menor que o tamanho do container*/
+
