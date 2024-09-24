@@ -6,43 +6,41 @@
 // https://www.instagram.com/p/C2zl1qxNl9y/
 // https://www.instagram.com/p/C3iIdVZIoBP/
 
-// let visitCount = 0;
-
-//     // Recuperar contagem do localStorage
-//     if (localStorage.getItem('visitCount')) {
-//       visitCount = parseInt(localStorage.getItem('visitCount'));
-//     }
-
-//     // Incrementar contagem
-//     visitCount++;
-
-//     // Atualizar HTML com nova contagem
-//     document.getElementById('visit-count').textContent = visitCount;
-
-//     // Salvar contagem atualizada no localStorage
-//     localStorage.setItem('visitCount', visitCount);
 
 
-const cards = document.querySelectorAll('.card');
+// Obtém os elementos HTML
+        const contadorElemento = document.getElementById('contador');
+        const ultimaVisitaElemento = document.getElementById('ultimaVisita');
 
-cards.forEach(card => {
-    card.addEventListener('click', () => {
-        const postId = card.dataset.id;
-        // Armazenar o ID do post em uma variável
-        window.location.href = `post.html?id=${postId}`;
-    });
-});
+        // Obtém o valor do contador e da data do localStorage ou inicializa
+        let contador = localStorage.getItem('contador') || 0;
+        let ultimaVisita = localStorage.getItem('ultimaVisita');
 
-// Função para atualizar o número de acessos (implementação depende do método de armazenamento)
-function atualizarAcessos(postId) {
-    // Recuperar o número de acessos do localStorage/banco de dados
-    let acessos = 0; // Valor inicial
+        // Incrementa o contador e atualiza a data
+        contador++;
+        ultimaVisita = new Date().toLocaleDateString();
 
-    // Incrementar o valor de acessos
-    acessos++;
+        // Atualiza os elementos na página e no localStorage
+        contadorElemento.textContent = contador;
+        ultimaVisitaElemento.textContent = ultimaVisita;
+        localStorage.setItem('contador', contador);
+        localStorage.setItem('ultimaVisita', ultimaVisita);
 
-    // Armazenar o número de acessos atualizado (localStorage/banco de dados)
-    // Atualizar o texto de acessos na página de visualização
-}
 
-// Na página de visualização do post:
+        
+
+        // funções da radio do site
+        const audio = document.getElementById('myAudio');
+
+        function playPause() {
+            if (audio.paused) {
+                audio.play();
+            } else {
+                audio.pause();
+            }
+        }
+
+        /* pegar a bi|ioteca nesses site que vai ser essa framework q vai servir pra fazer a radio https://github.com/goldfire/howler.js 
+        https://howlerjs.com/
+        https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio
+        */

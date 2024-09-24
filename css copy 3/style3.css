@@ -78,3 +78,19 @@ h2 {
     background: none;
 }
 
+span {
+    background-color: rgb(221, 221, 221);
+    color: rgb(0, 0, 0);
+    color:rgb(76, 7, 236) ;
+
+}
+
+#contador-visita {
+    font-size: larger;
+}
+
+#video-youtube{
+    position: fixed ;
+    right: 5px;
+    
+}
